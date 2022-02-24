@@ -1,0 +1,7 @@
+package praticetestpackage;
+
+import org.testng.annotations.Listeners;
+
+public class SampleTest {
+@Listeners(listenerpackage.SampleListener.class)
+}

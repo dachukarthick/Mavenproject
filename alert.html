@@ -1,0 +1,101 @@
+</pre>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ 
+h1 {
+color: red;
+margin-left: 40px;
+}
+ 
+button {
+color: white;
+margin-left: 40px;
+background-color: black;
+border: none;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+ 
+button:hover {
+background-color: silver;
+color: black;
+}
+ 
+.column {
+float: left;
+width: 33.33%;
+}
+ 
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+ 
+</style>
+</head>
+<body>
+<div class="row">
+ 
+<div class=column>
+<pre>
+ 
+</pre>
+<button>QTree Courses</button>
+<pre>
+ 
+</pre>
+<button>Qtree Youtube Channel</button>
+<pre>
+ 
+</pre>
+<button>Qtree Blog</button>
+<pre>
+ 
+</pre>
+<button id="JustPrompt" onclick="myFunction2()">Qtree Community</button>
+</div>
+ 
+<div class=column>
+<div align="center"><img src="Logo.png" alt="Qtree" width="400" height="80"></div>
+<h1><center>Alerts in Selenium</center></h1>
+ 
+<div align="center"><button id="alert" onclick="myFunction()">Display Alert</button></div>
+</pre>
+ 
+</div>
+ 
+<div class=column>
+<pre>
+ 
+</pre>
+<div align="center"><img src="sel.png" alt="Qtree" width="200" height="200"></div>
+</div>
+ 
+</div>
+ 
+<script>
+function myFunction() {
+alert("This is a Selenium alert box!");
+var popuResult = confirm("Confirm pop up with OK and Cancel button");
+}
+function myFunction2() {
+var person = prompt("Please enter your name");
+
+if (person != null) {
+  document.getElementById("demo").innerHTML =
+  "Hello " + person + "! How are you today?";
+}
+
+}
+</script>
+ 
+</body>
+</html>
+<pre>

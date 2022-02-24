@@ -1,0 +1,23 @@
+
+package praticepackage;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+public class SampleMain {
+public WebDriver driver;
+@BeforeTest
+public void chromeOpen() 
+{
+System.setProperty("webdriver.chrome.driver","E:\\driver\\chromedriver.exe");
+driver =new ChromeDriver();
+driver.get("https://www.facebook.com/");
+driver.manage().window().maximize();
+}
+@AfterTest
+public void chromeClose()
+{
+driver.close();
+}
+}

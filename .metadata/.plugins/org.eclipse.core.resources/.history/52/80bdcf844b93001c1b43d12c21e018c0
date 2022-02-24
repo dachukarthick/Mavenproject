@@ -1,0 +1,41 @@
+
+package praticepackage;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
+public class SampleMain {
+public WebDriver driver;
+public static ExtentReports extent;
+public static ExtentTest logger;
+public Properties sampleconfig() throws IOException {
+FileInputStream fis=new FileInputStream(System.getProperty("userdir"+"src/main/resources/sampleconfig.properties"));
+Properties obj=new  Properties();
+obj.load(fis);
+return obj;
+}
+@BeforeTest
+public void chromeOpen() 
+{
+System.setProperty("webdriver.chrome.driver","E:\\driver\\chromedriver.exe");
+driver =new ChromeDriver();
+driver.get("https://www.facebook.com/");
+driver.manage().window().maximize();
+extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/STMExtentReport.html", true);
+}
+@AfterTest
+public void chromeClose()
+{
+driver.close();
+}
+}

@@ -1,0 +1,21 @@
+package guardianttest;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.testng.annotations.Test;
+
+public class Guardianttestclass {
+@Test
+public void testRun()
+{
+@FindBy(xpath("//button[@id='all-home-launch-survey-Dental']"))
+WebElement btn_launch;
+@FindBy(id("fullName"))
+WebElement inp_username;
+}
+@Test
+public void value()
+{
+	btn_launch.click();
+	inp_username.sendKeys("dharshini");
+}}

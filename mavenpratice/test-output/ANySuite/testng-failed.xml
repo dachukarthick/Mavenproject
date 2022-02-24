@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ANySuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Sample Tests(failed)">
+    <classes>
+      <class name="maventest.Mainclass2">
+        <methods>
+          <include name="close"/>
+          <include name="login"/>
+          <include name="testrun"/>
+        </methods>
+      </class> <!-- maventest.Mainclass2 -->
+    </classes>
+  </test> <!-- Sample Tests(failed) -->
+</suite> <!-- Failed suite [ANySuite] -->

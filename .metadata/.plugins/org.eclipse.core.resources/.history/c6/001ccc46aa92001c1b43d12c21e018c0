@@ -1,0 +1,6 @@
+package praticetestpackage;
+
+public class SampleTest {
+@Listeners(listenerpackage.SampleListeners.class)
+
+}

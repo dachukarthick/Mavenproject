@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ANySuite" >
+<test name = "Sample Tests" >
+<classes>
+<class name="maventest.Mainclass2" />
+</classes>
+</test>
+<!--
+<suite name="Test Suite-1" >
+
+<test name = "Parallel Tests" parallel = "methods" thread-count = "3">
+<classes>
+<class name="maventest.Usingthread" />
+<class name="maventest.Sample2" />
+</classes>
+</test>
+-->
+</suite>
+

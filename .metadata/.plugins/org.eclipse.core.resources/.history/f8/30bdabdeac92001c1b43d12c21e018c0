@@ -1,0 +1,13 @@
+package objectpackage;
+
+import org.testng.annotations.Test;
+
+public class SampleObject {
+	@Test
+	public void execute()
+	{
+		
+	}
+	
+
+}

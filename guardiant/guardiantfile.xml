@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CreateSuite" >
+<test name = "Sampleprogram" >
+<classes>
+<class name="guardianttest.Guardianttest" />
+</classes>
+</test>
+</suite>
+
