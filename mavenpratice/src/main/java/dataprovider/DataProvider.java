@@ -19,8 +19,10 @@ public class DataProvider {
 	  XSSFWorkbook wb = new XSSFWorkbook(fis);
 	  XSSFSheet sh = wb.getSheet(sheetName);
 	  XSSFRow row = sh.getRow(0);
+	  
 	  int noOfRows = sh.getPhysicalNumberOfRows();
 	  int noOfCols = row.getLastCellNum();
+	  
 	  Cell cell;
 	  data = new String[noOfRows-1][noOfCols];
 	 

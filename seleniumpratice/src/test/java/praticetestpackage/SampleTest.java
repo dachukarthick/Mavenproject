@@ -12,7 +12,7 @@ public class SampleTest extends SampleMain{
 	@Test
 public void createObject()
 {
-		logger=extent.startTest("createObect");
+logger=extent.startTest("createObect");
 SampleObject object=new SampleObject(driver);
 object.valuesDisplay();
 }

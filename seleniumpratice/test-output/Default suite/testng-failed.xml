@@ -6,6 +6,7 @@
       <class name="praticetestpackage.SampleTest">
         <methods>
           <include name="chromeOpen"/>
+          <include name="getResult"/>
           <include name="createObject"/>
           <include name="chromeClose"/>
         </methods>

@@ -8,6 +8,7 @@
           <include name="excute"/>
           <include name="close"/>
           <include name="login"/>
+          <include name="getResult"/>
         </methods>
       </class> <!-- maventest.TestClass -->
     </classes>
